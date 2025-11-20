@@ -41,7 +41,7 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
     <div className="min-h-screen bg-slate-50">
       <div className="lg:hidden fixed top-0 left-0 right-0 bg-white border-b border-slate-200 z-50 px-4 py-3">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold text-slate-900">School Manager</h1>
+          <h1 className="text-xl font-bold text-slate-900">Administrador geral</h1>
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}
             className="text-slate-600 hover:text-slate-900"
