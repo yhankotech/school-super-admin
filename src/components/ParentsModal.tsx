@@ -68,7 +68,7 @@ export function ParentsModal({ parent, onClose }: ParentsModalProps) {
             </div>
             <div>
               <label className="text-sm font-medium text-slate-500">
-                Data de Matrícula
+                Data de Matrícula do educando
               </label>
               <p className="text-lg text-slate-900">
                 {parent.enrollmentDate.toLocaleDateString("pt-AO")}

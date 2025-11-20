@@ -52,9 +52,6 @@ export function StudentTable({ students, onSelectStudent }: StudentTableProps) {
               <th className="text-left py-4 px-6 font-semibold text-foreground">
                 Em Atraso
               </th>
-              <th className="text-left py-4 px-6 font-semibold text-foreground">
-                Status
-              </th>
               <th className="text-center py-4 px-6 font-semibold text-foreground">
                 Ações
               </th>
@@ -69,10 +66,6 @@ export function StudentTable({ students, onSelectStudent }: StudentTableProps) {
               >
                 <td className="py-4 px-6">
                   <div className="font-medium text-foreground">{student.name}</div>
-                  <div className="text-sm text-muted-foreground">
-                    Matrícula desde{" "}
-                    {student.enrollmentDate.toLocaleDateString("pt-AO")}
-                  </div>
                 </td>
                 <td className="py-4 px-6">
                   <div className="text-foreground">{student.schoolName}</div>

@@ -66,10 +66,6 @@ export function ParentsTable({ parents, onSelectParent }: ParentsTableProps) {
               >
                 <td className="py-4 px-6">
                   <div className="font-medium text-foreground">{parent.name}</div>
-                  <div className="text-sm text-muted-foreground">
-                    Matrícula desde{" "}
-                    {parent.enrollmentDate.toLocaleDateString("pt-AO")}
-                  </div>
                 </td>
                 <td className="py-4 px-6">
                   <div className="text-foreground">{parent.schoolName}</div>
