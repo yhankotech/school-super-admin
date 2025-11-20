@@ -7,7 +7,10 @@ import {
   Activity,
   LogOut,
   Menu,
-  X
+  X,
+  Users2,
+  Parentheses,
+  UserCircle2
 } from 'lucide-react';
 
 interface LayoutProps {
@@ -23,8 +26,11 @@ export function Layout({ children, currentView, onViewChange }: LayoutProps) {
   const navigation = [
     { name: 'Dashboard', icon: LayoutDashboard, view: 'dashboard' },
     { name: 'Schools', icon: School, view: 'schools' },
+    { name: 'Students', icon: Users2, view: 'students' },
+    { name: 'Parents', icon: Parentheses, view: 'parents' },
+    { name: 'Teachers', icon: UserCircle2, view: 'teachers' },
     { name: 'Payments', icon: DollarSign, view: 'payments' },
-    { name: 'Platforms', icon: Activity, view: 'platforms' }
+    { name: 'Platforms', icon: Activity, view: 'platforms' },
   ];
 
   const handleSignOut = async () => {

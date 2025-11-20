@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase';
+import { supabase } from '../../lib/supabase';
 import { Activity, Smartphone, Globe, Monitor, Server, Users, Clock } from 'lucide-react';
 
 interface Platform {
