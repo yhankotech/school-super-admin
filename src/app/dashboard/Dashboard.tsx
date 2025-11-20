@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { supabase } from '../lib/supabase';
+import { supabase } from '../../lib/supabase';
 import {
   School,
   Users,
@@ -182,8 +182,7 @@ export function Dashboard() {
   return (
     <div>
       <div className="mb-8">
-        <h2 className="text-3xl font-bold text-slate-900">Dashboard Overview</h2>
-        <p className="text-slate-600 mt-1">Real-time statistics across all schools</p>
+        <h2 className="text-3xl font-bold text-slate-900">Dashboard</h2>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

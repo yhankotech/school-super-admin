@@ -1,11 +1,14 @@
 import { useState } from 'react';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import { Login } from './components/Login';
-import { Layout } from './components/Layout';
-import { Dashboard } from './components/Dashboard';
-import { SchoolsManager } from './components/SchoolsManager';
-import { PaymentsManager } from './components/PaymentsManager';
-import { PlatformsManager } from './components/PlatformsManager';
+import { Login } from './app/auth/Login';
+import { Layout } from './app/Layout';
+import { Dashboard } from './app/dashboard/Dashboard';
+import { SchoolsManager } from './app/schools/SchoolsManager';
+import { PaymentsManager } from './app/payment/PaymentsManager';
+import { PlatformsManager } from './app/manage/PlatformsManager';
+import { Students } from "./app/students/Strudents";
+import { Parents } from "./app/parents/Parents";
+import { Teachers } from "./app/teachers/Teachers";
 
 function AppContent() {
   const { user, loading } = useAuth();
@@ -29,6 +32,12 @@ function AppContent() {
         return <Dashboard />;
       case 'schools':
         return <SchoolsManager />;
+      case 'students':
+        return <Students />;
+      case 'parents':
+        return <Parents/>;
+      case 'teachers':
+        return <Teachers/>;
       case 'payments':
         return <PaymentsManager />;
       case 'platforms':
